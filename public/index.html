@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0A1628" />
+  <meta name="description" content="Portfolio of Anshdeep Singh Randev, Founder and Lead Developer at AiSROvia." />
+  <title>Anshdeep Singh Randev — AiSROvia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=8" />
+</head>
+
+<body>
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader__inner">
+      <p class="eyebrow">Preparing the experience</p>
+      <div class="loader__track" aria-hidden="true"><span id="loaderBar"></span></div>
+      <p class="loader__count" id="loaderCount">000%</p>
+    </div>
+  </div>
+  <div class="custom-cursor custom-cursor--dot" aria-hidden="true"></div>
+  <div class="custom-cursor custom-cursor--ring" aria-hidden="true"></div>
+
+  <header class="site-header" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Anshdeep Singh Randev home"><img class="brand-logo"
+        src="assets/Logo/Logo.png" alt="ASR" /></a>
+    <nav class="nav-desktop">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button type="button" class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu"
+      aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <div class="nav-mobile-dropdown" id="mobileDropdown">
+    <a href="/services">Services</a>
+    <a href="/work">Work</a>
+    <a href="/about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <aside class="section-indicator" aria-label="Page sections">
+    <a data-section-link href="#heroScene" aria-label="Hero"><span></span></a><a data-section-link href="#walkScene"
+      aria-label="The Walk"><span></span></a><a data-section-link href="#services"
+      aria-label="Featured Work"><span></span></a><a data-section-link href="#globeScene"
+      aria-label="Globe"><span></span></a><a data-section-link href="#portfolioGallery"
+      aria-label="Portfolio gallery"><span></span></a><a data-section-link href="#about"
+      aria-label="About"><span></span></a><a data-section-link href="#contact" aria-label="Contact"><span></span></a>
+  </aside>
+
+  <main id="top">
+    <section class="scrub-scene hero-scene" id="heroScene" aria-labelledby="heroTitle">
+      <div class="sticky-stage">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <video class="scene-video" muted loop autoplay playsinline preload="auto" aria-hidden="true">
+          <source src="assets/videos/Hero.mp4" type="video/mp4" />
+        </video>
+        <div class="scene-shade scene-shade--hero"></div>
+        <div class="hero-copy">
+          <div class="hero-state hero-state--one">
+            <p class="eyebrow">Founder, AiSROvia</p>
+            <h1 id="heroTitle">Anshdeep<br />Singh Randev</h1>
+            <p class="hero-copy__role">Engineering intelligent products with clarity and intent.</p>
+          </div>
+          <div class="hero-state hero-state--two" aria-label="What I build">
+            <p class="eyebrow">What I build</p>
+            <p class="hero-state__headline">AI chatbots, apps<br />&amp; automation.</p>
+          </div>
+          <div class="hero-state hero-state--three" aria-label="Company and location">
+            <p class="eyebrow">Company &amp; location</p>
+            <p class="hero-state__headline">AiSROvia —<br />Perth, Australia.</p>
+            <p class="hero-copy__role">Serving clients across India and Australia.</p>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#walkScene"><span></span>Scroll to explore</a>
+      </div>
+    </section>
+
+    <section class="tech-marquee" aria-label="Core technology stack">
+      <div class="tech-marquee__track">
+        <div class="tech-marquee__group">
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flutter/2E9EF5" alt="" width="16" height="16" />Flutter</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/react/2E9EF5" alt="" width="16" height="16" />React</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flask/2E9EF5" alt="" width="16" height="16" />Flask</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/python/2E9EF5" alt="" width="16" height="16" />Python</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/openjdk/2E9EF5" alt="" width="16" height="16" />Java</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/mysql/2E9EF5" alt="" width="16" height="16" />MySQL</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/firebase/2E9EF5" alt="" width="16" height="16" />Firebase</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/supabase/2E9EF5" alt="" width="16" height="16" />Supabase</span>
+        </div>
+        <div class="tech-marquee__group" aria-hidden="true">
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flutter/2E9EF5" alt="" width="16" height="16" />Flutter</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/react/2E9EF5" alt="" width="16" height="16" />React</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flask/2E9EF5" alt="" width="16" height="16" />Flask</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/python/2E9EF5" alt="" width="16" height="16" />Python</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/openjdk/2E9EF5" alt="" width="16" height="16" />Java</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/mysql/2E9EF5" alt="" width="16" height="16" />MySQL</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/firebase/2E9EF5" alt="" width="16" height="16" />Firebase</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/supabase/2E9EF5" alt="" width="16" height="16" />Supabase</span>
+        </div>
+        <div class="tech-marquee__group" aria-hidden="true">
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flutter/2E9EF5" alt="" width="16" height="16" />Flutter</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/react/2E9EF5" alt="" width="16" height="16" />React</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flask/2E9EF5" alt="" width="16" height="16" />Flask</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/python/2E9EF5" alt="" width="16" height="16" />Python</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/openjdk/2E9EF5" alt="" width="16" height="16" />Java</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/mysql/2E9EF5" alt="" width="16" height="16" />MySQL</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/firebase/2E9EF5" alt="" width="16" height="16" />Firebase</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/supabase/2E9EF5" alt="" width="16" height="16" />Supabase</span>
+        </div>
+        <div class="tech-marquee__group" aria-hidden="true">
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flutter/2E9EF5" alt="" width="16" height="16" />Flutter</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/react/2E9EF5" alt="" width="16" height="16" />React</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/flask/2E9EF5" alt="" width="16" height="16" />Flask</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/python/2E9EF5" alt="" width="16" height="16" />Python</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/openjdk/2E9EF5" alt="" width="16" height="16" />Java</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/mysql/2E9EF5" alt="" width="16" height="16" />MySQL</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/firebase/2E9EF5" alt="" width="16" height="16" />Firebase</span>
+          <span class="tech-marquee__item"><img class="tech-marquee__icon"
+              src="https://cdn.simpleicons.org/supabase/2E9EF5" alt="" width="16" height="16" />Supabase</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scrub-scene walk-scene" id="walkScene" aria-labelledby="walkTitle">
+      <div class="sticky-stage">
+        <canvas id="projectsCanvas" aria-hidden="true"></canvas>
+        <video class="scene-video" muted loop autoplay playsinline preload="metadata" aria-hidden="true">
+          <source src="assets/videos/Projects.mp4" type="video/mp4" />
+        </video>
+        <div class="scene-shade scene-shade--walk"></div>
+        <div class="walk-intro">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="walkTitle">Built to keep<br />work moving.</h2>
+        </div>
+        <div class="project-stack" aria-label="Selected projects">
+          <article class="project-card" data-reveal="0.20">
+            <span class="project-card__line"></span>
+            <p class="project-card__number">01 / 04</p>
+            <h3>The Juicist</h3>
+            <p>Full juice manufacturing &amp; delivery platform with real-time inventory.</p>
+          </article>
+          <article class="project-card" data-reveal="0.36">
+            <span class="project-card__line"></span>
+            <p class="project-card__number">02 / 04</p>
+            <h3>Jewelry Shop Management</h3>
+            <p>Full jewelry ERP: inventory, manufacturing, ledgers, finance.</p>
+          </article>
+          <article class="project-card" data-reveal="0.52">
+            <span class="project-card__line"></span>
+            <p class="project-card__number">03 / 04</p>
+            <h3>Task Management System</h3>
+            <p>Collaborative workspaces with tracking and productivity reporting.</p>
+          </article>
+          <article class="project-card" data-reveal="0.68">
+            <span class="project-card__line"></span>
+            <p class="project-card__number">04 / 04</p>
+            <h3>Mobile Shop Management ERP</h3>
+            <p>Retail ERP: inventory, billing, repairs, warranty tracking.</p>
+          </article>
+          <a class="button project-button magnetic" data-reveal="0.84" href="/services">View all projects <span
+              aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="scrub-scene globe-scene" id="globeScene" aria-labelledby="globeHeading">
+      <div class="sticky-stage">
+        <canvas id="globeCanvas" aria-hidden="true"></canvas>
+        <div class="scene-shade scene-shade--globe"></div>
+        <div class="globe-intro">
+          <p class="eyebrow">Reach &amp; output</p>
+          <h2 id="globeHeading">Built from Perth,<br />delivered everywhere.</h2>
+        </div>
+        <!-- Accumulating stat columns — scroll-driven, stays visible once revealed -->
+        <div class="globe-stat-layout" aria-label="Statistics">
+          <!-- Left column: stats 1, 3, 5 (indices 0, 2, 4) -->
+          <div class="globe-col globe-col--left">
+            <div class="globe-stat" data-stat-index="0" role="group" aria-label="Stat 1 of 6">
+              <span class="globe-stat__value">18+</span>
+              <span class="globe-stat__label">Software Projects</span>
+            </div>
+            <div class="globe-stat" data-stat-index="2" role="group" aria-label="Stat 3 of 6">
+              <span class="globe-stat__value">10+</span>
+              <span class="globe-stat__label">Applications Built</span>
+            </div>
+            <div class="globe-stat" data-stat-index="4" role="group" aria-label="Stat 5 of 6">
+              <span class="globe-stat__value">3</span>
+              <span class="globe-stat__label">Enterprise Solutions</span>
+            </div>
+          </div>
+          <!-- Right column: stats 2, 4, 6 (indices 1, 3, 5) -->
+          <div class="globe-col globe-col--right">
+            <div class="globe-stat" data-stat-index="1" role="group" aria-label="Stat 2 of 6">
+              <span class="globe-stat__value">15+</span>
+              <span class="globe-stat__label">Clients Served</span>
+            </div>
+            <div class="globe-stat" data-stat-index="3" role="group" aria-label="Stat 4 of 6">
+              <span class="globe-stat__value">2</span>
+              <span class="globe-stat__label">Enterprise ERP Systems</span>
+            </div>
+            <div class="globe-stat" data-stat-index="5" role="group" aria-label="Stat 6 of 6">
+              <span class="globe-stat__value">International</span>
+              <span class="globe-stat__label">Clients in Australia</span>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination dots (kept, still driven by scroll progress) -->
+        <div class="globe-carousel__dots" aria-hidden="true">
+          <span class="globe-carousel__dot is-active"></span>
+          <span class="globe-carousel__dot"></span>
+          <span class="globe-carousel__dot"></span>
+          <span class="globe-carousel__dot"></span>
+          <span class="globe-carousel__dot"></span>
+          <span class="globe-carousel__dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services" aria-labelledby="servicesTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Featured Work</p>
+          <p class="services-intro font-sans-serif">Custom enterprise ERPs, digital ecosystems, and mobile products.</p>
+        </div>
+        <h2 id="servicesTitle">Useful software, thoughtfully forged.</h2>
+      </div>
+
+      <div class="featured-grid">
+        <!-- Card 1: The Juicist -->
+        <a class="featured-card" href="/work/the-juicist">
+          <div class="featured-card__media bg-juicist">
+            <div class="featured-browser-frame">
+              <div class="featured-browser-header">
+                <div class="featured-browser-dot"></div>
+                <div class="featured-browser-dot"></div>
+                <div class="featured-browser-dot"></div>
+              </div>
+              <div class="featured-browser-content">
+                <div class="featured-browser-overlay">
+                  <div class="featured-browser-overlay-pill">View case study &nbsp;↗</div>
+                </div>
+                <video src="assets/Projects Images/The juicist/video.mp4" autoPlay loop muted playsInline
+                  disablePictureInPicture></video>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card__info">
+            <div class="featured-card__meta">
+              <span>ColdPress Ltd &nbsp;·&nbsp; Web Application</span>
+              <span>2025</span>
+            </div>
+            <h3 class="featured-card__title">The Juicist <span>&nbsp;↗</span></h3>
+            <p class="featured-card__desc">E-commerce storefront and operations dashboard for a cold-pressed juice
+              brand.</p>
+          </div>
+        </a>
+
+        <!-- Card 2: Jewellery Shop ERP -->
+        <a class="featured-card" href="/work/jewellery-shop-erp">
+          <div class="featured-card__media bg-jewellery">
+            <div class="featured-browser-frame">
+              <div class="featured-browser-header">
+                <div class="featured-browser-dot"></div>
+                <div class="featured-browser-dot"></div>
+                <div class="featured-browser-dot"></div>
+              </div>
+              <div class="featured-browser-content">
+                <div class="featured-browser-overlay">
+                  <div class="featured-browser-overlay-pill">View case study &nbsp;↗</div>
+                </div>
+                <video src="assets/Projects Images/Jwellery Management /video.mp4" autoPlay loop muted playsInline
+                  disablePictureInPicture></video>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card__info">
+            <div class="featured-card__meta">
+              <span>Mahadev Jewellers &nbsp;·&nbsp; Enterprise ERP</span>
+              <span>2025</span>
+            </div>
+            <h3 class="featured-card__title">Jewellery Shop ERP <span>&nbsp;↗</span></h3>
+            <p class="featured-card__desc">ERP system for inventory, gold exchange, live rates, and custom accounting.
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 3: Mobile Retail ERP (Mobile Layout matching works page) -->
+        <a class="featured-card featured-card--mobile" href="/work/mobile-shop-erp">
+          <div class="featured-phone-frame">
+            <div class="featured-phone-notch">
+              <div class="featured-phone-notch-dot"></div>
+            </div>
+            <div class="featured-phone-content">
+              <div class="featured-browser-overlay">
+                <div class="featured-browser-overlay-pill">View case study &nbsp;↗</div>
+              </div>
+              <video src="assets/Projects Images/Mobile Shop ERP/video.mp4" autoPlay loop muted playsInline
+                disablePictureInPicture></video>
+            </div>
+          </div>
+          <div class="featured-card__info featured-card__info--mobile">
+            <h3 class="featured-card__title">Mobile Retail ERP <span>&nbsp;↗</span></h3>
+            <p class="featured-card__desc">Retail ERP for mobile stores — fast billing, auto bill sharing, inventory
+              deduction, expense tracking, and sales analytics.</p>
+            <div class="featured-card__tags">Android &nbsp;·&nbsp; ERP &nbsp;·&nbsp; Offline-First &nbsp;·&nbsp; 2025
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4: Payroll Portal -->
+        <a class="featured-card" href="/work/payroll-management-system">
+          <div class="featured-card__media bg-payroll">
+            <div class="featured-browser-frame">
+              <div class="featured-browser-header">
+                <div class="featured-browser-dot"></div>
+                <div class="featured-browser-dot"></div>
+                <div class="featured-browser-dot"></div>
+              </div>
+              <div class="featured-browser-content">
+                <div class="featured-browser-overlay">
+                  <div class="featured-browser-overlay-pill">View case study &nbsp;↗</div>
+                </div>
+                <video src="assets/Projects Images/Payroll Management/video.mp4" autoPlay loop muted playsInline
+                  disablePictureInPicture></video>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card__info">
+            <div class="featured-card__meta">
+              <span>Vibrant Tech &nbsp;·&nbsp; Workforce</span>
+              <span>2024</span>
+            </div>
+            <h3 class="featured-card__title">Payroll Portal <span>&nbsp;↗</span></h3>
+            <p class="featured-card__desc">Employee self-service and administrative portal for tracking attendance,
+              viewing payslips, and submitting leave requests.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- View All Projects Button -->
+      <div class="featured-action-container">
+        <a class="featured-button magnetic" href="/work">
+          View All Projects <span aria-hidden="true">&nbsp;→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="portfolio-gallery" id="portfolioGallery" aria-labelledby="portfolioGalleryTitle">
+      <div class="portfolio-gallery__container">
+        <div class="portfolio-gallery__header">
+          <p class="eyebrow">Portfolio gallery</p>
+          <h2 id="portfolioGalleryTitle">Digital systems,<br />shaped with intent.</h2>
+        </div>
+        <div class="portfolio-gallery__rows" id="portfolioGalleryRows" aria-label="Portfolio projects"></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="aboutTitle">
+      <div>
+        <p class="eyebrow">About AiSROvia</p>
+        <h2 id="aboutTitle">Useful software, thoughtfully forged.</h2><span class="about-accent"
+          aria-hidden="true"></span>
+      </div>
+      <div class="about__content" data-about-reveal>
+        <p>I’m Anshdeep Singh Randev, founder and lead developer at AiSROvia. I partner with ambitious businesses to
+          turn complex operations into focused, dependable digital products.</p>
+        <p class="stack-label">Core stack</p>
+        <ul class="stack" aria-label="Core technology stack">
+          <li>Flutter</li>
+          <li>React</li>
+          <li>Flask</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>MySQL</li>
+          <li>Firebase</li>
+          <li>Supabase</li>
+          <li>AI integrations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="contact__orb" aria-hidden="true"></div>
+      <div class="contact__grain" aria-hidden="true"></div>
+      <p class="eyebrow">Have a challenge in mind?</p>
+      <h2 id="contactTitle">Start a project.</h2>
+      <form class="contact-form" id="contactForm">
+        <label class="sr-only" for="email">Your email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="Your email address" required />
+        <button class="button magnetic" type="submit">Let’s talk <span aria-hidden="true">→</span></button>
+      </form>
+      <a class="email-link" href="mailto:contact@aisrovia.com">contact@aisrovia.com</a>
+      <p class="contact__small">A concise hello is all it takes. I’ll get back to you as soon as possible.</p>
+    </section>
+  </main>
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="site-footer__main">
+      <div class="site-footer__identity"><a class="brand brand--footer" href="#top"
+          aria-label="Anshdeep Singh Randev home"><img class="brand-logo brand-logo--footer"
+            src="assets/Logo/Footer.png" alt="ASR" /></a>
+        <p>Engineering intelligent products with clarity and intent.</p>
+      </div>
+      <div class="site-footer__links">
+        <p class="site-footer__heading">Quick links</p>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="/work">Work</a><a
+            href="/services">Services</a><a href="/about">About</a><a href="#contact">Contact</a></nav>
+      </div>
+      <div class="site-footer__contact">
+        <p class="site-footer__heading">Contact</p><a class="site-footer__email"
+          href="mailto:contact@aisrovia.com">contact@aisrovia.com</a>
+        <p class="site-footer__location">Perth, Australia.</p>
+      </div>
+      <div class="site-footer__connect">
+        <p class="site-footer__heading">Connect</p>
+        <div class="footer-socials" aria-label="Social links"><a href="mailto:contact@aisrovia.com"
+            aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3.5 6.5h17v11h-17zM4 7l8 6 8-6" />
+            </svg></a><a href="https://wa.me/" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg
+              viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.4 3.6A11.7 11.7 0 0 0 2.8 19.1L2 22l3-0.8A11.7 11.7 0 1 0 20.4 3.6Z" />
+              <path
+                d="M8.5 7.2c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.9 2.1c.1.3.1.5-.1.7l-.6.7c.6 1.1 1.5 2 2.7 2.6l.7-.8c.2-.2.4-.2.7-.1l2 .9c.3.1.4.3.4.5v.5c0 .3-.2.6-.5.7-.6.2-1.3.3-2 .1-2.9-.9-5.3-3.2-6.3-6.1-.2-.6-.2-1.3 0-2Z" />
+            </svg></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg
+              viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 9v10M5 5v.1M10 19v-5.6c0-1.8 1.1-3 2.8-3s2.7 1.2 2.7 3V19M10 10.4V19" />
+            </svg></a></div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>© 2026 AiSROvia. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/frames-manifest.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="ai-widget.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

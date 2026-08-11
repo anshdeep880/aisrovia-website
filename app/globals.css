@@ -1,26 +1,156 @@
 @import "tailwindcss";
 
+/* Force CSS rebuild */
+
+@theme {
+  --font-syne: var(--font-syne), sans-serif;
+  --font-manrope: var(--font-manrope), sans-serif;
+  --font-dm-mono: var(--font-dm-mono), monospace;
+
+  --color-brand-bg: #0a1628;
+  --color-brand-text: #edeae4;
+  --color-brand-accent: #00aaff;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a1628;
+  --foreground: #edeae4;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-manrope);
+}
+
+/* Site Header Styles matching public/styles.css exactly */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px clamp(22px, 4.5vw, 72px);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+body.is-light-section .site-header {
+  mix-blend-mode: normal !important;
+}
+
+/* Make nav links dark navy against light background */
+body.is-light-section .site-header nav a {
+  color: rgba(10, 22, 40, 0.75) !important;
+  font-weight: 700 !important;
+}
+
+body.is-light-section .site-header nav a:hover,
+body.is-light-section .site-header nav a:focus-visible {
+  color: #00aaff !important;
+}
+
+/* Make brand logo dark on light background */
+body.is-light-section .site-header .brand {
+  color: #0a1628 !important;
+}
+body.is-light-section .site-header .brand-logo {
+  filter: brightness(0.1) sepia(1) hue-rotate(180deg) saturate(2);
+}
+
+.site-header > * {
+  pointer-events: auto;
+}
+
+.brand {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 800;
+  font-size: clamp(18px, 1.4vw, 23px);
+  line-height: 1;
+  letter-spacing: -0.07em;
+  color: #edeae4;
+}
+
+.brand span {
+  color: #00aaff;
+}
+
+.brand-logo {
+  display: block;
+  height: clamp(22px, 2.6vw, 38px);
+  width: auto;
+}
+
+.site-header nav {
+  display: flex;
+  gap: clamp(15px, 2.4vw, 35px);
+}
+
+.site-header nav a {
+  color: rgba(237, 234, 228, 0.82);
+  font-family: var(--font-dm-mono), monospace;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.25s;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible,
+.site-header nav a.active {
+  color: #00aaff !important;
+}
+
+/* Shared SiteHeader component — desktop-only nav.
+   Tailwind's `hidden` cannot beat `.site-header nav { display:flex }`,
+   so we control visibility here. */
+.site-header .nav-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-header .nav-desktop {
+    display: flex;
+  }
+}
+
+/* Work Page Theme overrides */
+.work-page-theme {
+  background-color: #edeae4 !important;
+  color: #0a1628 !important;
+}
+
+/* styles.css sets html,body to navy background.
+   When on the work page we need the bone colour to show through. */
+html:has(.work-page-theme),
+html:has(.work-page-theme) body {
+  background: #edeae4 !important;
+  overflow: auto !important; /* ensure scroll is never locked on this page */
+}
+
+/* On the bone/light bg, mix-blend-mode:screen makes links invisible.
+   Reset to normal blend mode so links are readable. */
+.work-page-theme .site-header {
+  mix-blend-mode: normal !important;
+  background: transparent !important;
+}
+
+/* Nav links: dark navy so they're visible against bone background */
+.work-page-theme .site-header nav a {
+  color: rgba(10, 22, 40, 0.75) !important;
+  font-weight: 700 !important;
+}
+
+.work-page-theme .site-header nav a:hover,
+.work-page-theme .site-header nav a:focus-visible {
+  color: #00aaff !important;
+}
+
+/* Brand/logo colour: dark on light background */
+.work-page-theme .site-header .brand {
+  color: #0a1628 !important;
 }

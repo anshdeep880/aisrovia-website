@@ -1,0 +1,370 @@
+--- DEBUG RESULTS ---
+Viewport Width: 375px
+Body scrollWidth: 411px
+Body clientWidth: 375px
+Overflowing Elements: [
+  {
+    "tagName": "HEADER",
+    "id": "",
+    "className": "site-header",
+    "rect": {
+      "left": 0,
+      "right": 411,
+      "width": 411
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "DIV",
+    "id": "mobileDropdown",
+    "className": "nav-mobile-dropdown",
+    "rect": {
+      "left": 16,
+      "right": 395,
+      "width": 379
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "A",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 25,
+      "right": 386,
+      "width": 361
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "A",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 25,
+      "right": 386,
+      "width": 361
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "A",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 25,
+      "right": 386,
+      "width": 361
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "A",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 25,
+      "right": 386,
+      "width": 361
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "P",
+    "id": "",
+    "className": "eyebrow",
+    "rect": {
+      "left": 20,
+      "right": 410.90625,
+      "width": 390.90625
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "H2",
+    "id": "portfolioGalleryTitle",
+    "className": "",
+    "rect": {
+      "left": 20,
+      "right": 410.90625,
+      "width": 390.90625
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "BR",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 410.90625,
+      "right": 410.90625,
+      "width": 0
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": -1229.925048828125,
+      "right": -922.425048828125,
+      "width": 307.5
+    },
+    "reason": "left_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": -904.425048828125,
+      "right": -596.925048828125,
+      "width": 307.5
+    },
+    "reason": "left_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": -578.925048828125,
+      "right": -271.425048828125,
+      "width": 307.5
+    },
+    "reason": "left_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": -253.425048828125,
+      "right": 54.074951171875,
+      "width": 307.5
+    },
+    "reason": "left_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 72.074951171875,
+      "right": 379.574951171875,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 397.574951171875,
+      "right": 705.074951171875,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 723.074951171875,
+      "right": 1030.574951171875,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 1048.574951171875,
+      "right": 1356.074951171875,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": -72.07499694824219,
+      "right": 235.4250030517578,
+      "width": 307.5
+    },
+    "reason": "left_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 253.4250030517578,
+      "right": 560.9250030517578,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 578.9249877929688,
+      "right": 886.4249877929688,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 904.4249877929688,
+      "right": 1211.925048828125,
+      "width": 307.50006103515625
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 1229.925048828125,
+      "right": 1537.425048828125,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 1555.425048828125,
+      "right": 1862.925048828125,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 1880.925048828125,
+      "right": 2188.425048828125,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "IMG",
+    "id": "",
+    "className": "",
+    "rect": {
+      "left": 2206.425048828125,
+      "right": 2513.925048828125,
+      "width": 307.5
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "DIV",
+    "id": "",
+    "className": "contact__orb",
+    "rect": {
+      "left": 175.69122314453125,
+      "right": 402.47021484375,
+      "width": 226.77899169921875
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "DIV",
+    "id": "",
+    "className": "ai-widget-container",
+    "rect": {
+      "left": 16,
+      "right": 395,
+      "width": 379
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "DIV",
+    "id": "aiPanel",
+    "className": "ai-widget-panel",
+    "rect": {
+      "left": 21.68499755859375,
+      "right": 389.31500244140625,
+      "width": 367.6300048828125
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "DIV",
+    "id": "",
+    "className": "ai-widget-header",
+    "rect": {
+      "left": 22.654998779296875,
+      "right": 388.3450012207031,
+      "width": 365.69000244140625
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "DIV",
+    "id": "aiMessages",
+    "className": "ai-widget-messages",
+    "rect": {
+      "left": 22.654998779296875,
+      "right": 388.3450012207031,
+      "width": 365.69000244140625
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "DIV",
+    "id": "aiPill",
+    "className": "ai-widget-pill",
+    "rect": {
+      "left": 16,
+      "right": 395,
+      "width": 379
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "BUTTON",
+    "id": "aiSendBtn",
+    "className": "ai-widget-send",
+    "rect": {
+      "left": 348,
+      "right": 388,
+      "width": 40
+    },
+    "reason": "right_overflow"
+  },
+  {
+    "tagName": "svg",
+    "id": "",
+    "className": {},
+    "rect": {
+      "left": 360,
+      "right": 376,
+      "width": 16
+    },
+    "reason": "right_overflow"
+  }
+]
+---------------------
