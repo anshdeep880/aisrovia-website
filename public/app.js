@@ -6,7 +6,7 @@
   const loaderBar = document.querySelector("#loaderBar");
   const loaderCount = document.querySelector("#loaderCount");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const usesCanvas = window.matchMedia("(min-width: 768px)").matches && !reducedMotion;
+  const usesCanvas = true; // Always run canvas animations on all devices
   const portfolioProjects = [
     {
       id: "commerce-ops",
@@ -397,7 +397,7 @@
 
     indicatorLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
-        const target = document.querySelector(link.getAttribute("href"));
+        const href = link.getAttribute("href"); if (!href || !href.startsWith("#")) return; const target = document.querySelector(href);
         if (!target) return;
         event.preventDefault();
         target.scrollIntoView({ behavior: "smooth", block: "start" });

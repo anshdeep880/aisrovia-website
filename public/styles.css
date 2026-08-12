@@ -13,9 +13,13 @@
   box-sizing: border-box;
 }
 
+main {}
+
 html {
   background: var(--navy);
   scroll-behavior: auto;
+  overflow-x: clip;
+  max-width: 100vw;
 }
 
 body {
@@ -24,7 +28,8 @@ body {
   background: var(--navy);
   color: var(--bone);
   font-family: var(--sans);
-  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100vw;
 }
 
 body:not(.is-loaded) {
@@ -402,6 +407,7 @@ h2 {
 }
 
 .services {
+  overflow: hidden;
   background: linear-gradient(115deg, #0a1628, #0e1e36 70%, #0a1628);
 }
 
@@ -685,6 +691,7 @@ h2 {
 }
 
 .services {
+  overflow: hidden;
   background: radial-gradient(circle at 77% 20%, rgba(0, 170, 255, .08), transparent 28%), linear-gradient(128deg, #0a1628, #0c1b30 62%, #0a1628);
 }
 
@@ -1001,8 +1008,7 @@ h2 {
   }
 }
 
-@media (max-width: 768px),
-(prefers-reduced-motion: reduce) {
+@media (max-width: 768px) {
   .site-header {
     padding: 20px 18px;
   }
@@ -1013,10 +1019,7 @@ h2 {
 
   /* Hamburger Menu Button */
   .nav-hamburger {
-    position: absolute;
-    right: 36px;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     z-index: 50;
     display: flex;
     flex-direction: column;
@@ -1104,39 +1107,10 @@ h2 {
     mix-blend-mode: normal !important;
   }
 
-  .scrub-scene {
-    height: auto;
-  }
-
-  .sticky-stage {
-    position: relative;
-    min-height: 100svh;
-    height: auto;
-  }
-
-  .scrub-scene canvas:not(#globeCanvas) {
-    display: none;
-  }
-
-  #globeCanvas {
-    display: block !important;
-  }
-
-  .scene-video {
-    display: block;
-  }
-
-  .hero-scene .sticky-stage {
-    height: 100vh;
-    height: 100svh;
-  }
-
   .hero-copy {
     left: 20px;
     bottom: 84px;
     right: 18px;
-    opacity: 1;
-    transform: none;
   }
 
   .hero-copy h1 {
@@ -1153,36 +1127,8 @@ h2 {
     bottom: 26px;
   }
 
-  .walk-scene .sticky-stage {
-    min-height: 920px;
-    padding: 112px 20px 54px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .walk-intro {
-    position: relative;
-    inset: auto;
-    text-align: left;
-  }
-
   .walk-intro h2 {
     font-size: clamp(2.7rem, 14vw, 4.6rem);
-  }
-
-  .project-stack {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    transform: none;
-  }
-
-  .project-card,
-  .project-button {
-    opacity: 1;
-    transform: none;
   }
 
   .project-card {
@@ -1312,8 +1258,7 @@ h2 {
   }
 }
 
-@media (max-width: 768px),
-(prefers-reduced-motion: reduce) {
+@media (max-width: 768px) {
   .hero-copy {
     width: auto;
     min-height: 0;
@@ -1323,19 +1268,6 @@ h2 {
   .hero-copy::before {
     inset: -22px -20px -28px -18px;
     border-radius: 18px;
-  }
-
-  .hero-state--two,
-  .hero-state--three {
-    display: none !important;
-  }
-
-  .hero-state--one {
-    position: relative;
-    inset: auto;
-    opacity: 1;
-    transform: none;
-    animation: none !important;
   }
 
   .hero-copy h1 {
@@ -1411,6 +1343,7 @@ h2 {
 
 /* Refinement pass: layered capability cards, contact polish, and footer. */
 .services {
+  overflow: hidden;
   padding-bottom: clamp(112px, 16vw, 220px);
 }
 
@@ -1842,6 +1775,7 @@ h2 {
 
 @media (max-width: 768px) {
   .services {
+    overflow: hidden;
     padding-bottom: 86px;
   }
 
@@ -2007,6 +1941,7 @@ h2 {
 }
 
 .services {
+  overflow: hidden;
   background: #f5f2ed;
 }
 
@@ -2532,6 +2467,7 @@ h2 {
 
 /* Layout reset, navigation cues, and restrained interaction polish. */
 .services {
+  overflow: hidden;
   padding-bottom: clamp(72px, 8vw, 120px);
 }
 
@@ -2836,6 +2772,7 @@ body.is-light-section .section-indicator span {
 
 /* Compact service cards: five simple cards in a horizontal row. */
 .services {
+  overflow: hidden;
   padding-bottom: clamp(76px, 9vw, 132px);
 }
 
@@ -3115,16 +3052,6 @@ body.is-light-section .section-indicator span {
 
 /* ── Mobile < 768px ─────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .globe-scene {
-    height: auto;
-    overflow: visible;
-  }
-
-  .globe-scene .sticky-stage {
-    position: relative;
-    height: 100svh;
-  }
-
   .globe-intro {
     top: 52px;
     white-space: normal;
@@ -3535,13 +3462,44 @@ body.is-light-section .section-indicator span {
 /* Mobile Overrides at bottom to guarantee specificity and cascade ordering */
 @media (max-width: 768px) {
 
-  /* Prevent horizontal blank sections by resetting min-height on all scrub-scenes */
-  .scrub-scene,
-  .hero-scene,
-  .walk-scene,
-  .globe-scene {
-    min-height: 0 !important;
-    height: auto !important;
+  .hero-copy {
+    width: auto;
+    min-height: 280px;
+    bottom: 74px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .hero-copy h1,
+  .hero-copy h2 {
+    font-size: clamp(2.4rem, 11vw, 4rem);
+  }
+
+  .walk-intro {
+    position: absolute;
+    top: 12vh;
+    left: 20px;
+    right: 20px;
+    text-align: left;
+  }
+
+  .walk-intro h2 {
+    font-size: clamp(2.4rem, 11vw, 4rem);
+  }
+
+  .project-stack {
+    position: absolute;
+    top: auto;
+    bottom: 8vh;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    transform: none;
+  }
+
+  .project-card {
+    margin-bottom: 15px;
+    padding-left: 12px;
   }
 
   /* Force Services section-heading to stack vertically in a clean single column layout on mobile/tablet */

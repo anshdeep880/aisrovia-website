@@ -58,17 +58,7 @@ export default function ServicePinnedSection({
       const targetBg = isEven ? "#edeae4" : "#0a1628";
       const targetText = isEven ? "#0a1628" : "#edeae4";
 
-      // Background color smooth scrub transition
-      gsap.to(bg, {
-        backgroundColor: targetBg,
-        color: targetText,
-        scrollTrigger: {
-          trigger: trigger,
-          start: "top center",
-          end: "bottom center",
-          scrub: true,
-        },
-      });
+      // Background color smooth scrub transition removed to prevent unreadable text contrast during interpolation
 
       // Clip-path reveal wipe animation
       gsap.fromTo(
@@ -107,7 +97,7 @@ export default function ServicePinnedSection({
         {/* Background wrapper that transitions color */}
         <div
           ref={bgRef}
-          className={`w-full h-full flex items-center transition-colors duration-500 ${
+          className={`w-full h-full flex items-center ${
             isEven
               ? "bg-[#0a1628] text-[#edeae4]"
               : "bg-[#edeae4] text-[#0a1628]"

@@ -101,13 +101,7 @@ export default function AboutHeroScrub() {
   useEffect(() => {
     if (!isMounted) return;
 
-    const checkMobileState = () => {
-      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const isMobileViewport = window.matchMedia("(max-width: 768px)").matches;
-      return isMobileViewport || reducedMotion;
-    };
-
-    const skipCanvas = checkMobileState();
+    const skipCanvas = false;
     setIsMobile(skipCanvas);
 
     if (skipCanvas) {
@@ -343,11 +337,11 @@ export default function AboutHeroScrub() {
 
           {/* Text Content Overlay */}
           <div className="absolute z-[2] flex flex-col justify-end bottom-12 md:bottom-28 left-6 right-6 md:left-16 lg:left-24 max-w-3xl text-left select-none pointer-events-none">
-            
+
             {/* DYNAMIC TITLE */}
             <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[240px] w-full">
               {/* MOBILE STATIC TITLE */}
-              <h1 
+              <h1
                 ref={mobileTitleRef}
                 className="absolute bottom-0 md:hidden font-syne text-4xl sm:text-5xl font-bold tracking-tight text-[#edeae4] leading-[1.05] transition-opacity duration-75"
               >
@@ -360,7 +354,7 @@ export default function AboutHeroScrub() {
                   ref={(el) => {
                     nameRefs.current[i] = el;
                   }}
-                  className="absolute inset-0 flex flex-col justify-end translate-y-52 md:translate-y-0 transition-opacity duration-75"
+                  className="absolute inset-0 flex flex-col justify-end transition-opacity duration-75"
                   style={{
                     opacity: 0,
                     visibility: "hidden",

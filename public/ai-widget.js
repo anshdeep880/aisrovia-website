@@ -13,6 +13,7 @@
       flex-direction: column;
       align-items: center;
       font-family: 'Manrope', sans-serif;
+      pointer-events: none;
     }
     @media (min-width: 640px) {
       .ai-widget-container {
@@ -38,6 +39,7 @@
       overflow: hidden;
       cursor: text;
       transition: all 0.3s ease;
+      pointer-events: auto;
     }
     .ai-widget-pill::before {
       content: '';

@@ -229,7 +229,7 @@ export default function AIAssistantWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 left-4 right-4 w-auto sm:left-1/2 sm:right-auto sm:w-[480px] sm:-translate-x-1/2 z-[9999] flex flex-col items-center">
+    <div className="fixed bottom-6 left-4 right-4 w-auto sm:left-1/2 sm:right-auto sm:w-[480px] sm:-translate-x-1/2 z-[9999] flex flex-col items-center pointer-events-none">
 
       {/* 1. UPWARD EXPANDED CHAT PANEL */}
       <AnimatePresence>
@@ -239,7 +239,7 @@ export default function AIAssistantWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 15, scale: 0.97 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="w-full h-[380px] rounded-3xl bg-gradient-to-b from-[#0a1628]/85 to-[#0a1628]/75 border border-[#edeae4]/20 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,170,255,0.15)] flex flex-col overflow-hidden mb-4 relative"
+            className="w-full h-[380px] rounded-3xl bg-gradient-to-b from-[#0a1628]/85 to-[#0a1628]/75 border border-[#edeae4]/20 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,170,255,0.15)] flex flex-col overflow-hidden mb-4 relative pointer-events-auto"
           >
             {/* Glossy top sheen overlay */}
             <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
@@ -331,7 +331,7 @@ export default function AIAssistantWidget() {
       {/* 2. PERSISTENT PILL INPUT BAR */}
       <div
         onClick={() => inputRef.current?.focus()}
-        className="w-full bg-gradient-to-b from-white/35 to-[#edeae4]/20 hover:from-white/40 hover:to-[#edeae4]/25 backdrop-blur-xl border border-white/45 shadow-[0_12px_36px_rgba(0,170,255,0.14)] hover:shadow-[0_12px_44px_rgba(0,170,255,0.22)] rounded-full p-1.5 flex items-center gap-2.5 transition-all duration-300 relative overflow-hidden cursor-text"
+        className="w-full bg-gradient-to-b from-white/35 to-[#edeae4]/20 hover:from-white/40 hover:to-[#edeae4]/25 backdrop-blur-xl border border-white/45 shadow-[0_12px_36px_rgba(0,170,255,0.14)] hover:shadow-[0_12px_44px_rgba(0,170,255,0.22)] rounded-full p-1.5 flex items-center gap-2.5 transition-all duration-300 relative overflow-hidden cursor-text pointer-events-auto"
       >
         {/* Glossy sheen reflection overlay matching reference */}
         <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/20 via-transparent to-transparent pointer-events-none" />

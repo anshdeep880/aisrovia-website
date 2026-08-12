@@ -25,13 +25,10 @@ export default function ServicesPage() {
 
       {/* Services Pinned Sections + matching ProofStrips */}
       {services.map((service, index) => {
-        // If the service index is even (0, 2), the pinned section transitions from Navy -> Bone.
-        // Therefore, at the bottom of the section, it is Bone background.
-        // So the ProofStrip below it will have Bone background (isDarkBg: false).
-        // If index is odd (1, 3), the pinned section transitions from Bone -> Navy.
-        // Therefore, at the bottom of the section, it is Navy background.
-        // So the ProofStrip below it will have Navy background (isDarkBg: true).
-        const isDarkBgAtBottom = index % 2 !== 0;
+        // Since the pinned section no longer transitions color, it remains its initial color.
+        // Index even (0, 2) is Navy, so the ProofStrip below it should be Navy (isDarkBg: true).
+        // Index odd (1, 3) is Bone, so the ProofStrip below it should be Bone (isDarkBg: false).
+        const isDarkBgAtBottom = index % 2 === 0;
 
         return (
           <React.Fragment key={service.id}>
