@@ -33,6 +33,7 @@ const clientCountries: Record<string, string> = {
   "InfoAIForge Product": "India",
   "Prime Nest Care": "India",
   "RatnaYantra": "India",
+  "Titan Gym": "India",
 };
 
 export const metadata = {

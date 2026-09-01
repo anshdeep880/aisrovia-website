@@ -151,6 +151,10 @@ export default function ServicesScatterSection() {
       smoothWheel: true,
     });
 
+    if (typeof window !== "undefined") {
+      (window as any).lenis = lenis;
+    }
+
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -165,6 +169,9 @@ export default function ServicesScatterSection() {
     });
 
     return () => {
+      if (typeof window !== "undefined" && (window as any).lenis === lenis) {
+        delete (window as any).lenis;
+      }
       lenis.destroy();
     };
   }, []);

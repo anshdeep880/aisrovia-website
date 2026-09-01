@@ -11,12 +11,25 @@ Our Team:
 - Shehnaz Rangrez: UI/UX Designer
 
 Our Featured Portfolio Projects:
-- The Juicist: A comprehensive e-commerce and order management system for a juice business.
-- Jewellery Shop ERP: A custom inventory, billing, and stock management system for retail jewellery shops.
-- Task Management System: A high-performance internal tool for team task tracking and workflow automation.
-- Mobile Shop ERP: An end-to-end retail management and stock tracking system for mobile phone shops.
-- Payroll Management System: A secure payroll and biometric-linked attendance software for employee management.
-- Visitor and Security Management System: A premium visitor logging, security, and access control tracker.
+- Titan Gym — Automated Gym Management & Notification Platform: Cross-platform web application (Flutter Web + Firebase) for gym management featuring automated daily WhatsApp & Email fee renewal reminders, bulk Excel member onboarding, multi-mode partial payment ledgers, dynamic plans, and real-time revenue analytics.
+- RentMaster Property Management System: Tenant & landlord property management app for tracking rent payment schedules, sending automated rent due reminders via SMS & WhatsApp, logging maintenance requests, and generating receipts.
+- The Juicist: Multi-application ecosystem automating customer orders, production planning, warehouse operations, and deliveries with full Shopify integration.
+- Jewellery Shop ERP: Enterprise-grade ERP managing gold & silver inventory, purchases, old gold exchange, girvi, live gold rates, and financial reporting.
+- Billing & Stock Management System: Real-time stock level synchronization and accounting dashboard with high-volume barcoding and custom invoice templates.
+- Dhanarogya Portal: Secure, compliant regional healthcare web portal mapping clinical facilities, doctors, and real-time appointment availability.
+- RatnaYantra: B2B marketplace for loose-gemstone sourcing featuring specialized gemstone filtering, verified certification lookup, and secure escrow integration.
+- Restaurant Management System: Touch-first POS and ERP optimizing kitchen orders, table turnover, inventory, and customer management.
+- Enterprise Task Management System: Real-time workflow platform connecting customers, admins, and staff with live chat, file sharing, and task progress tracking.
+- Kavita Tower: Property showcase & real estate lead-generation website with floor plan visualizers.
+- Payroll Management System & Biometric Portal: Workforce HRMS & payroll platform with facial recognition/biometric attendance, salary processing, and leave tracking.
+- Prime Nest Care: Service business platform with online booking, service breakdowns, and lead capture.
+- Visitor Gate Pass System: Enterprise security panel for scanning visitor QR pass codes, vehicle logging, and resident notifications.
+- Shivora: EdTech video course delivery platform with subscriber access lists and payment gateway integration.
+- Live Employee Tracker: GPS-based workforce tracking system with live location, route history, and activity monitoring.
+- Food Ordering App: Consumer food delivery mobile app connecting customers, kitchen teams, and delivery agents with live tracking.
+- StreetBites Finder: Interactive real-time food truck finder map with live statuses and route directions.
+- Mobile Retail ERP: Retail ERP for mobile phone stores featuring fast billing, auto WhatsApp bill sharing, inventory deduction, expense tracking, and sales analytics.
+- Salon Booking App: Appointment booking, stylist selection, and customer loyalty rewards platform.
 
 Our Technology Stack:
 - Frontend: Flutter (mobile/multiplatform), React, Next.js

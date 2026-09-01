@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 
 import AIAssistantWidget from "@/src/components/AIAssistantWidget";
 import CustomCursor from "@/src/components/CustomCursor";
+import ScrollToTopButton from "@/src/components/ScrollToTopButton";
 
 export default function RootLayout({
   children,
@@ -45,6 +46,7 @@ export default function RootLayout({
         <CustomCursor />
         {children}
         <AIAssistantWidget />
+        <ScrollToTopButton />
       </body>
     </html>
   );

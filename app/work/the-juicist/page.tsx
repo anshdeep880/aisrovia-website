@@ -707,7 +707,7 @@ export default function TheJuicistCaseStudy() {
       </section>
 
       {/* STICKY BOTTOM BREADCRUMB BAR (Theme adapts via isHeroInView state) */}
-      <div className="fixed bottom-6 left-6 z-50 pointer-events-none">
+      <div className="fixed bottom-[84px] left-4 sm:left-6 xl:bottom-6 xl:left-6 z-50 pointer-events-none">
         <div
           className={`pointer-events-auto px-4 py-2.5 rounded-full flex items-center gap-2.5 font-dm-mono text-xs shadow-md transition-all duration-300 border backdrop-blur-md ${
             isHeroInView
@@ -723,31 +723,10 @@ export default function TheJuicistCaseStudy() {
           </Link>
           <span className="opacity-40">|</span>
           <span className="opacity-70">The Juicist</span>
-          <span className="opacity-30">/</span>
-          <span className="opacity-55 font-medium">Complete Management Platform</span>
+          <span className="opacity-30 hidden sm:inline">/</span>
+          <span className="opacity-55 font-medium hidden sm:inline">Complete Management Platform</span>
         </div>
       </div>
-
-      {/* SCROLL-UP CIRCULAR BUTTON (bottom right) */}
-      <AnimatePresence>
-        {showScrollUp && (
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            onClick={scrollToTop}
-            className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-[#0a1628] hover:bg-[#00aaff] text-white flex items-center justify-center shadow-lg transition-colors border border-white/10"
-            aria-label="Scroll to top"
-          >
-            <svg
-              className="w-4 h-4 fill-none stroke-current stroke-2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 15l-6-6-6 6" />
-            </svg>
-          </motion.button>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
