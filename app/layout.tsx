@@ -23,6 +23,15 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "ASR — AiSROvia Services",
   description: "Digital systems, shaped with intent. Our work at AiSROvia.",
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 import AIAssistantWidget from "@/src/components/AIAssistantWidget";
