@@ -14,10 +14,29 @@ export interface Project {
   href?: string;
   tags?: string[];         // mobile cards only, e.g. ["iOS", "AI", "2026"]
   relatedService?: string; // Links this project to a service
+  alsoInMobileFilter?: boolean; // Dual web + mobile ecosystems surfaced in Mobile filter too
 }
 
 export const projects: Project[] = [
   // WEB PROJECTS (Aspect ratio ~1.33 / Landscape)
+  {
+    id: "vehicle-tracking-system",
+    variant: "web",
+    name: "Society Vehicle Tracking System",
+    client: "Smart Society Deployment",
+    category: "Real-Time Security & Monitoring",
+    year: "2026",
+    headline:
+      "Connected guard mobile app and real-time web monitoring console automating resident parking pass verification, violation alerts, and photo-verified entry logs.",
+    description:
+      "Dual-app security ecosystem uniting a Gate Mobile App and TypeScript/React Web Monitoring Console with instant NO_PASS & PASS_EXPIRED push notifications and cloud evidence capture.",
+    image: "/assets/Projects%20Images/Vehicle%20Tracking%20System/Dashboard.jpeg",
+    video: "/assets/Projects%20Images/Vehicle%20Tracking%20System/video.mp4",
+    href: "/work/vehicle-tracking-system",
+    tags: ["Mobile App", "Web Console", "Real-Time", "FCM", "2026"],
+    relatedService: "web-mobile-apps",
+    alsoInMobileFilter: true,
+  },
   {
     id: "the-juicist",
     variant: "web",

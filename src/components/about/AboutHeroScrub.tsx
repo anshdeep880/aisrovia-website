@@ -37,7 +37,7 @@ function drawCover(canvas: HTMLCanvasElement, image: HTMLImageElement) {
 
 const PEOPLE = [
   { name: "Anshdeep Singh Randev", role: "Founder, AiSrovia" },
-  { name: "Shahu Jagtap", role: "Founder & System Analyst" },
+  { name: "Shahu Jagtap", role: "Mentor" },
   { name: "Kamlesh Shewale", role: "Lead Developer" },
   { name: "Shehnaz Rangrez", role: "UI/UX Designer" },
 ];

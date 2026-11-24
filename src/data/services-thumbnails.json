@@ -25,11 +25,6 @@
     "id": "food-truck-tracking"
   },
   {
-    "project": "Gym Due Reminder",
-    "src": "/assets/Projects%20Images/Gym%20Due%20Reminder/Gym%20Due%20Reminder.mp4",
-    "id": "gym-due-reminder"
-  },
-  {
     "project": "Jwellery Management",
     "src": "/assets/Projects%20Images/Jwellery%20Management%20/Jwellery%20Management%20.png",
     "id": "jwellery-management"
@@ -98,5 +93,10 @@
     "project": "The juicist",
     "src": "/assets/Projects%20Images/The%20juicist/The%20juicist.png",
     "id": "the-juicist"
+  },
+  {
+    "project": "Vehicle Tracking System",
+    "src": "/assets/Projects%20Images/Vehicle%20Tracking%20System/Alerts.jpeg",
+    "id": "vehicle-tracking-system"
   }
 ]

@@ -34,6 +34,7 @@ const clientCountries: Record<string, string> = {
   "Prime Nest Care": "India",
   "RatnaYantra": "India",
   "Titan Gym": "India",
+  "Smart Society Deployment": "India",
 };
 
 export const metadata = {
@@ -60,13 +61,13 @@ export default function WorkPage() {
       {/* 1. Header (Navbar) - shared component with mobile hamburger menu */}
       <SiteHeader />
 
-      {/* Nav Link Buffer / Spacing */}
-      <div className="h-28 sm:h-32 w-full shrink-0" />
+      {/* Nav Link Buffer / Safe Clearance below fixed 86px SiteHeader */}
+      <div className="h-32 sm:h-36 md:h-40 w-full shrink-0" />
 
       {/* 2. Main Page Content Container */}
-      <main className="flex-grow max-w-7xl mx-auto px-6 md:px-12 lg:px-16 xl:px-20 pb-32 w-full flex flex-col gap-16 md:gap-24">
+      <main className="flex-grow max-w-7xl mx-auto px-6 md:px-12 lg:px-16 xl:px-20 pb-32 w-full flex flex-col gap-16 md:gap-20">
         {/* Header Section */}
-        <header className="flex flex-col gap-4 max-w-4xl text-left pt-8 md:pt-12">
+        <header className="flex flex-col gap-4 max-w-4xl text-left pt-4 md:pt-6">
           <span className="font-dm-mono text-xs uppercase tracking-widest text-brand-accent select-none font-semibold">
             Selected work
           </span>

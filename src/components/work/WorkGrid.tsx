@@ -24,7 +24,9 @@ export default function WorkGrid({ projects }: WorkGridProps) {
 
   const matchFilter = (project: Project, filter: string) => {
     if (filter === "all") return true;
-    if (filter === "mobile") return project.variant === "mobile";
+    if (filter === "mobile") {
+      return project.variant === "mobile" || Boolean(project.alsoInMobileFilter);
+    }
     if (filter === "erp") {
       const text = (project.name + " " + project.category + " " + project.description).toLowerCase();
       return text.includes("erp") || text.includes("billing") || text.includes("accounting") || text.includes("payroll") || text.includes("biometric") || text.includes("stock");
@@ -47,8 +49,8 @@ export default function WorkGrid({ projects }: WorkGridProps) {
   return (
     <div className="w-full flex flex-col gap-12 md:gap-16">
       
-      {/* Premium Filter Pill Bar */}
-      <div className="w-full flex justify-center pb-4 px-2 sm:px-0">
+      {/* Premium Filter Pill Bar — safe clearance below fixed SiteHeader */}
+      <div className="w-full flex justify-center pt-4 pb-4 px-2 sm:px-0 scroll-mt-28">
         <div className="flex flex-wrap justify-center items-center gap-1.5 sm:gap-2 p-1.5 bg-white/40 border border-[#0a1628]/5 rounded-2xl sm:rounded-full shadow-sm backdrop-blur-md">
           {filters.map((filter) => {
             const isActive = activeFilter === filter.id;

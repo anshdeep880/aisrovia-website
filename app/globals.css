@@ -133,10 +133,12 @@ html:has(.work-page-theme) body {
 }
 
 /* On the bone/light bg, mix-blend-mode:screen makes links invisible.
-   Reset to normal blend mode so links are readable. */
+   Reset to normal blend mode with a subtle frosted bone backdrop so scrolled pills never clash with nav links. */
 .work-page-theme .site-header {
   mix-blend-mode: normal !important;
-  background: transparent !important;
+  background: rgba(237, 234, 228, 0.88) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* Nav links: dark navy so they're visible against bone background */

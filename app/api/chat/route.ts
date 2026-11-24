@@ -6,7 +6,7 @@ The company specializes in custom AI chatbots & automation integrations, custom 
 
 Our Team:
 - Anshdeep Singh Randev: Founder, AiSrovia (Lead Software Engineer & Architect)
-- Shahu Jagtap: Founder & System Analyst
+- Shahu Jagtap: Mentor
 - Kamlesh Shewale: Lead Developer
 - Shehnaz Rangrez: UI/UX Designer
 
